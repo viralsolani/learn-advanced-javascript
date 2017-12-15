@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<div id="root">
+    <ul>
+        <li v-for="name in names" v-text="name"></li>
+    </ul>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.11/vue.js"></script>
+
+    <script>
+
+        new Vue({
+            el: '#root',
+            data: {
+                names: ['Viral', 'Manish' , 'Ashish', 'Rahul']
+            }
+        })
+    </script>
+</body>
+</html>

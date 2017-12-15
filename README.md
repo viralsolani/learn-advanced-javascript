@@ -1,3 +1,3 @@
-### learn-vue
+# Learn Vue.js
 
-Examples of Vue. Learning it from https://laracasts.com/series/learn-vue-2-step-by-step/
+Learning it from https://laracasts.com/series/learn-vue-2-step-by-step/
