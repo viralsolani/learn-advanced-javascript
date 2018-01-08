@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        .is-loading {background: red;}
+    </style>
+</head>
+<body>
+
+<div id="root">
+    <button :title="title">Hove Over Me</button>
+
+    <button :class="{'is-loading': isLoading}" :title="title" @click="toggleClass">Toggle Me</button>
+
+    <button :disabled="isDisabled" @click="toggleDisabled">Disabled Me</button>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.11/vue.js"></script>
+
+    <script>
+
+        new Vue({
+            el: '#root',
+            data: {
+                title: 'Now the title is being set through Vue JS',
+                isLoading:false,
+                isDisabled:false
+            },
+            methods: {
+                toggleClass() {
+                    this.isLoading = true;
+                },
+                toggleDisabled() {
+                    this.isDisabled = true;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
