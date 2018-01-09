@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+
+<div id="root">
+    <p>Original Name: "{{ name }}"</p>
+    <p>Computed reversed Name: "{{ reversedName }}"</p>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.11/vue.js"></script>
+
+<script>
+    new Vue({
+        el: '#root',
+        data: {
+           name : 'Viral Solani'
+        },
+        computed: {
+            reversedName(){
+                return this.name.split('').reverse().join('');
+            }
+        }
+    })
+</script>
+</body>
+</html>

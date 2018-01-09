@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+
+<div id="root">
+    <h2> Tasks </h2>
+    <ul>
+        <li v-for="task in tasks" v-text="task.description"></li>
+
+    </ul>
+
+    <h2> In Complete Tasks </h2>
+     <ul>
+        <li v-for="task in inCompleteTasks" v-text="task.description"></li>
+    </ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.11/vue.js"></script>
+
+<script>
+    var app = new Vue({
+        el: '#root',
+        data: {
+           tasks: [
+                { description:'Hit the Gym', completed: false },
+                { description:'Read the Motivational book', completed: true },
+                { description:'No social Media', completed: true },
+                { description:'Learn Vue.js', completed: true },
+                { description:'Clear Inbox', completed: false },
+                { description:'Clean room', completed: false },
+           ]
+        },
+        computed: {
+            inCompleteTasks(){
+                return this.tasks.filter(task => ! task.completed)
+            }
+        }
+    })
+</script>
+</body>
+</html>
