@@ -4,11 +4,13 @@
   "description": "Learn Webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode developement",
+    "prod": "webpack --mode production"
   },
   "author": "Viral Solani",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.16.3"
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0"
   }
 }
