@@ -1,3 +1,2 @@
-# Learn Vue.js
+# Demo Projects of Advanced Javascript
 
-Learning it from https://laracasts.com/series/learn-vue-2-step-by-step/
