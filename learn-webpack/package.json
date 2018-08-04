@@ -4,13 +4,19 @@
   "description": "Learn Webpack",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode developement",
-    "prod": "webpack --mode production"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --open"
   },
   "author": "Viral Solani",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^4.16.3",
-    "webpack-cli": "^3.1.0"
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "html-webpack-plugin": "^3.0.7",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
   }
 }
