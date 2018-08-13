@@ -1,0 +1,11 @@
+{
+  "name": "node-php-password-manager",
+  "version": "1.0.0",
+  "description": "Node PHP Password",
+  "main": "index.js",
+  "author": "Viral Solani",
+  "license": "ISC",
+  "dependencies": {
+    "node-php-password": "^0.1.2"
+  }
+}
